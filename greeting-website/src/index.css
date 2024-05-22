@@ -1,0 +1,22 @@
+.container{
+  width: 400px;
+  padding: 25px;
+  background-color: lightblue;
+  text-align: center;
+  margin: auto;
+  border-radius: 11px;
+  margin-top: 44px;
+  font-family: "Roboto", sans-serif;
+}
+.container h1{
+  font-size: 66px;
+}
+.container p{
+  font-size: 44px;
+}
+.container h2{
+  font-size: 33px;
+}
+.container img{
+  width: 125px;
+}
