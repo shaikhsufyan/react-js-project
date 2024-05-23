@@ -1,0 +1,33 @@
+.container{
+  width: 420px;
+  background-color: rgb(168, 204, 212); 
+  margin: auto;
+  text-align: center;
+  padding: 11px;
+  margin-top: 55px;
+   
+}
+.container input{
+  width: 90%;
+  padding: 11px;
+  border: none;
+  font-size: 20px;
+  margin-top: 11px;
+  margin-top: 11px;
+  border-radius: 3px;
+
+}
+.container button{
+  width: 90px;
+  padding: 7px;
+  margin: 5px;
+  border: none;
+  font-size: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .equal{
+  background-color: rgb(0, 162, 255);
+  color: white;
+}
