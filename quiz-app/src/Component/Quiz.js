@@ -1,95 +1,84 @@
-import React, { useEffect, useState } from 'react'
-import { Data } from './Data';
+ import React, { useState } from 'react'
+ import { Data } from './Data';
+ 
+ const Quiz = () => {
+  const [data, setData] = useState(Data);
+  const [index, setIndex] = useState(0);
+  const [score, setScore] = useState(0)
+  console.log(data);
 
-const Quiz = () => {
-    const [data, setData] = useState(Data);
-    const [ans, setAns] = useState()
-    const [num, setNum] = useState(0);
-    const [score, setScore] = useState(0)
+  const next = () =>{
+    if(index < data.length-1){
+      setIndex(index+1)
+    }else{
+      document.querySelector(".score").innerHTML=`<p>Your Score : ${score}/5</p>`
+
+      document.querySelector(".quiz").innerHTML=""
+
+      let nextBtn = document.querySelector("#next");
+      nextBtn.innerHTML="Play Again";
+      nextBtn.classList.add("reset");
+      const reset = document.querySelector(".reset");
+      reset.addEventListener("click", ()=>{
+        window.location.reload()
+      })
+
+
+
+    }
     
-    const next = () =>{
-         
-        
-        if(num+1 < data.length ){
-            setNum(num+1)
-        }else{
-            const scoreCard = document.querySelector(".score").innerHTML=`<p>Your Score : ${score}/5</p>`  
-            
-            document.querySelector(".quiz").innerHTML=""
-             const button = document.querySelector("#next");
-             button.innerHTML="Play Again";
-             button.classList.add("reset")
-             
-             const resetBtn = document.querySelector(".reset");
-            resetBtn.addEventListener("click", () =>{
-                window.location.reload()
-            })
-        }
-        const checkedValue = document.querySelectorAll(".checkedValue");
-        checkedValue.forEach((curVal)=>{
-             curVal.checked=false;
-        })
-
-    }
-
+  const checked = document.querySelectorAll(".checkedValue");
+  checked.forEach((curVal)=>{
+    curVal.checked=false
+  })
      
+  }
+ 
 
-    const handleInput = (event) =>{
-        console.log(event.target.value);
-        setAns(event.target.value)
+  const handleInput = (event) =>{
+    let chooseVal = event.target.value;
+    console.log(chooseVal);
+    if(chooseVal === data[index].ans){
+      setScore(score+1);
+      
+
     }
-    useEffect(()=>{
-        if(ans === data[num].ans){
-            setScore(score+1)
-        }else{
-            setScore(score)
+    
+  }
+  console.log(score);
+   return (
+     <div className='container'>
+       <div className='quiz'>
+        <div>
+          <h1>Q : {data[index].q}</h1>
+        </div>
+         <div className='option'>
+          <input name='select' type='radio' onChange={handleInput} className='checkedValue' value={data[index].a}  />
+          <p>A : {data[index].a}</p>
+         </div>
 
-        }
-    },[ans])
+         <div className='option'>
+          <input name='select' type='radio' onChange={handleInput} className='checkedValue' value={data[index].b} />
+          <p>B :{data[index].b}</p>
+         </div>
 
-   
-   
-  return (
-    <div className='container'>
-        <h1 className='head'>QUIZ APP</h1>
+         <div className='option'>
+          <input name='select' type='radio' onChange={handleInput} className='checkedValue' value={data[index].c} />
+          <p>C : {data[index].c}</p>
+         </div>
 
-         <div className='quiz'>
-            <h1>Q : {data[num].q}</h1>
-
-            <div className='option'>
-            <input type='radio' name='select' onChange={handleInput} className="checkedValue" value={data[num].a}/>
-            <p>{data[num].a}</p>
-            </div>
-
-            <div className='option'>
-            <input type='radio' name='select' onChange={handleInput} className="checkedValue" value={data[num].b}/>
-            <p>{data[num].b}</p>
-            </div>
-
-            <div className='option'>
-            <input type='radio' name='select' onChange={handleInput} className="checkedValue" value={data[num].c}/>
-            <p>{data[num].c}</p>
-            </div>
-
-            <div className='option'>
-            <input type='radio' name='select' onChange={handleInput} className="checkedValue" value={data[num].d}/>
-            <p>{data[num].d}</p>
-            </div>
-
-            
-             
-             
-         </div> 
-         <div className='score'></div>
-         <div className='btns'>
-                
-                <button id='next' onClick={next}>Next</button>
-            </div>
-          
-             
-
-    </div>
-  )
-}
-
-export default Quiz
+         <div className='option'>
+          <input name='select' type='radio' onChange={handleInput} className='checkedValue' value={data[index].d} />
+          <p>D : {data[index].d}</p>
+         </div>
+       </div>
+       
+       <div className='score'></div>
+       <div className='btns'>
+        <button id='next' onClick={next}>Next</button>
+       </div>
+     </div>
+   )
+ }
+ 
+ export default Quiz;

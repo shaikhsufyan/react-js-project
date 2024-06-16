@@ -1,11 +1,11 @@
 export const  Data = [
     {
         q:"What is JavaScript ?",
-        a:"JS is synchronous",
-        b:"JS is Asynchronous",
+        a:"JS is Programming language",
+        b:"JS is Framework",
         c:"None",
         d:"Typed Langauge",
-        ans:"JS is synchronous"
+        ans:"JS is Programming language"
     },
     {
         q:"What is ReactJS ?",
