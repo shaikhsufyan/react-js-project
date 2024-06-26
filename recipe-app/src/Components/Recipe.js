@@ -23,12 +23,11 @@ const Recipe = ({detail}) => {
      
   return (
     <>
-    {!data ?  "" :  
+    {!data ?  "Not Found" :  
     
-    <div className='mealInfo'>
+    <div className='msg'>
       
      <img src={data.strMealThumb}/>
-    
         <div className='info'>
         <h1>Recipe Detail's</h1>
          <button>{data.strMeal}</button>
