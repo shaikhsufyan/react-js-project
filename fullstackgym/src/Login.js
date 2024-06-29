@@ -17,7 +17,7 @@ const Login = () => {
   }
   const handleSubmit = async (e) =>{
     e.preventDefault();
-    const check = await fetch("http://localhost:8000/login",{
+    const check = await fetch(`https://gym-api-2.onrender.com/login`,{ 
       method:"POST",
       headers:{
         "Content-Type":"application/json"
