@@ -21,7 +21,7 @@ const corsOption = {
   origin: "http://localhost:3000/",
 };
 
-const PORT = process.env.PORT | 8000;
+const PORT = process.env.PORT | 5000;
  
  
  
