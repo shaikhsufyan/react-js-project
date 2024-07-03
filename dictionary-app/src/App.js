@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Main from './Component/Main';
-
+import Search from './Component/Search';
+ 
 function App() {
   return (
-     <Main/>
+     <>
+      
+      <Search/>
+     </>
   );
 }
 
