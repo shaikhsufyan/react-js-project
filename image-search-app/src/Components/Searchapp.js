@@ -3,19 +3,24 @@ import React, { useState } from 'react'
 const Searchapp = () => {
       const [value, setValue] = useState()
       const [result, setResult] = useState([]);
+
+      let Acces_key = "H3s0Ay26iI-x_wZp9C2ly-Y91pIs_pENS1eN1YbKN2g";
      const inputHandle = (event) =>{
         console.log(event.target.value);
-        setValue(event.target.value)
+        setValue(event.target.value);
+        getData(value)
     
      }
 
      const searchImg = () =>{
-        getData(value)
+        // getData(value)
         setValue("")
          
      }
+
+      
      const getData = async (searchValue) =>{
-        const get = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchValue}&client_id=H3s0Ay26iI-x_wZp9C2ly-Y91pIs_pENS1eN1YbKN2g`);
+        const get = await fetch(`https://api.unsplash.com/search/photos?query=${searchValue}&per_Page=28&P=1&client_id=${Acces_key}`);
         const jsonData = await get.json();
         console.log(jsonData);
        
@@ -31,6 +36,7 @@ const Searchapp = () => {
   return (
     <>
         <div className='container'>
+        <h1>Image Search App</h1>
             <div className='inputs'>
                 <input type='text' placeholder='Search Images' value={value} onChange={inputHandle} />
                 <button onClick={searchImg}>Search</button>
