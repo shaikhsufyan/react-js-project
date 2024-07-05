@@ -27,11 +27,11 @@ const Signup = () => {
     const handleSubmit = async (event) =>{
         event.preventDefault();
 
-        const send = await fetch("http://localhost:8000/register",{
+        const send = await fetch(`https://gym-api-2.onrender.com/register`,{
             method:"POST",
-            headers:{
+            headers:{ 
                 "Content-Type":"application/json"
-            },
+            },  
             body:JSON.stringify(store)
             
         });
