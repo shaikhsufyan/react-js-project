@@ -23,6 +23,7 @@ const Myapp = () => {
  
     const myFun = async () =>{
         const get = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${API_KEY}&units=metric`);
+        
         const jsonData = await get.json()
         console.log(jsonData);
         setData(jsonData);
