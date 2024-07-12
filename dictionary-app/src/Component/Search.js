@@ -35,9 +35,7 @@
                      <p>Synoyms : {data.meanings[0].synonyms[0]                     }</p>
                      <p>Example : {data.meanings[0].definitions[0].example}</p>
                      <button onClick={()=>window.open(data.sourceUrls[0],"_blank")}>Read More</button>
-
-
-
+                                                       
                     </div>
                     : ""
                  }
