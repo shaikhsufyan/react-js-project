@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+
+}
+nav ul li{
+  margin-inline: 22px;
+  font-size: 22px;
+}
+.product{
+  width: 600px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  position: relative;
+  margin-top: 88px;
+   
+  
+}
+.card{
+  margin-top: 32px;
+  display: flex;
+  background-color: #d8d8d8;
+  padding: 22px;
+  border-radius: 11px;
+}
+.card .text{
+  margin-left: 11px;
+  font-size: 20px;
+}
+.product img{
+  width: 200px;
+  height: 160px;
+
+}
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 22px;
+}
+.category label{
+  font-size: 24px;
+}
+.category select{
+  width: 220px;
+  border: 2px solid black;
+  margin-left: 11px;
+  padding: 6px;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.searchBar input{
+  padding: 5px;
+  font-size: 18px;
+  border: 2px solid black;
+  outline: none;
+}
