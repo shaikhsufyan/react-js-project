@@ -8,9 +8,11 @@ import w3 from "./images/wo3.jpg"
 function App() {
   return (
     <>
-      <Profile img={w1}/>
+     <div className='user'>
+     <Profile img={w1}/>
     <Profile img={w2}/>
     <Profile img={w3}/>
+     </div>
     </>
 
   );
