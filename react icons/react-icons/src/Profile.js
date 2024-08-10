@@ -10,10 +10,10 @@ const Profile = ({img}) => {
         <img src={img}/>
         <p>Diana</p>
         <div className="icons">
-        <BsApple/>
-        <BsAlarmFill/>
-        <FaAmazon/>
-        <MdAdb/>
+        <BsApple style={{color:"#2979FF"}}/>
+        <BsAlarmFill style={{color:"#2979FF"}}/>
+        <FaAmazon style={{color:"#2979FF"}}/>
+        <MdAdb style={{color:"#2979FF"}}/>
         </div>
     </div>
   )
