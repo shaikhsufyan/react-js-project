@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  margin: 22px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.box{
+  width: 300px;
+  padding: 11px;
+  background-color: lightblue;
+  text-align: center;
+  margin-top: 22px;
+}
+.btns{
+  display: flex;
+  justify-content: center
+}
+.btns button{
+   padding: 11px;
+   margin: 2px;
+   cursor: pointer;
+}
+.button_page{
+  background-color: silver;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagination CSS */
+.images{
+  
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+.images img{
+  margin: 6px;
+  width: 200px;
+}
