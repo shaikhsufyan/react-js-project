@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav{
+  display: flex;
+  justify-content: left;
+  background-color: rgb(7, 7, 7);
+  padding: 11px;
+  
+}
+nav ul li a{
+  color: white;
+  margin-inline: 11px;
+  font-size: 14px;
+}
+.head{
+  font-size: 20px;
+}
+
+form{
+  width: 330px;
+  text-align: center;
+}
+form input{
+  width: 95%;
+  padding: 5px;
+  border: 1px solid rgb(119, 119, 119);
+  font-size: 17px;
+  color: rgb(153, 153, 153);
+  margin-top: 21px;
+}
+form button{
+  width: 135px;
+  height: 33px;
+  background-color: rgb(2, 173, 122);
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 22px;
+}
+form .heading{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.account{
+  text-align: left;
+ margin-top: -12px;
+}
+.account p{
+  font-size: 14px;
+  color: rgb(83, 83, 83);
+}
+.account a{
+  color: rgb(0, 0, 255);
+}
+
+.main-page{
+  display: flex;
+  justify-content: center;
+  gap: 53px;
+  margin-top: 29px;
+}
