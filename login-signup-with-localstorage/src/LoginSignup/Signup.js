@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import main from "../../src/Component/images/main.jpg"
+import main from "../../src/LoginSignup/main.jpg"
 import Navbar from './Navbar'
 import { useNavigate } from 'react-router-dom'
 
