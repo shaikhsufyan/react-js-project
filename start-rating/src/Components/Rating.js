@@ -9,7 +9,12 @@
     
     
    return (
-     <div className='container'>
+     <div>
+     <div className='head'>
+        <h1>Star Rating</h1>
+        <p>Please Rate Us</p>
+     </div>
+        <div className='container'>
         {
             arr.map((curValue, index)=>{
                 return(
@@ -22,6 +27,7 @@
                 )
             })
         }
+     </div>
      </div>
    )
  }
