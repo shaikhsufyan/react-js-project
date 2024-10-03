@@ -5,12 +5,13 @@ import Main from "./Main";
 import GymMember from "./GymMember";
 
 const Navbar = () => {
-  const API = "http://localhost:8000/users";
+  const API = "https://gym-api-2.onrender.com/users";
     const [member, setMember] = useState([]);
 
     const showUser = async () =>{
         const users = await fetch(API);
         const jsonData = await users.json();
+        console.log(users);
         if(jsonData.length>0){
           setMember(jsonData)
         }   
