@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Pagination from './component/Pagination';
-import Scroll from './Infinite Scroll/Scroll';
+import Pagination from './Components/Pagination';
 
 function App() {
   return (
-     <Scroll/>
+    <Pagination/>
   );
 }
 
