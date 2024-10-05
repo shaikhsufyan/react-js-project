@@ -47,13 +47,13 @@ import { useEffect } from 'react';
         <div className='buttons'>
 
              
-            {pageNo>1? <button onClick={handlePrev}>Prev</button> : ""}
+            {pageNo>1? <button onClick={handlePrev} className='preBtn'>Previous</button> : ""}
              {mergeArr.map((curValue)=>{
                 return (
                     <button onClick={()=>setPageNo(curValue)} className={curValue==pageNo? "active":""} >{curValue}</button>
                 )
              })}
-            <button onClick={handleNext}>Next</button>
+            <button onClick={handleNext} className='nextBtn'>Next</button>
              
 
         </div>
