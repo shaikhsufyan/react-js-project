@@ -1,12 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Signup from './Component/Signup';
-import Home from './Component/Home';
+import React from 'react'
+import "./index.css"
+import Singnup from './LoginSignups/Singnup'
+import { BrowserRouter,Routes, Route } from 'react-router-dom'
+import Login from './LoginSignups/Login'
+import Home from './LoginSignups/Home'
+ 
 
-function App() {
+const App = () => {
   return (
-   <Home/>
-  );
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Singnup/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/home' element={<Home/>} />
 
-export default App;
+      </Routes>
+    </BrowserRouter>
+  )
+}
+ 
+export default App
