@@ -42,3 +42,11 @@ body {
  ul li{
   list-style: none;
  }
+ button{
+  width: 120px;
+  height: 38px;
+  border: none;
+  background-color: rgb(125, 204, 231);
+  color: white;
+  font-size: 22px;
+ }
