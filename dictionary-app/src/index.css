@@ -47,13 +47,15 @@ code {
 }
 .searchBar button{
   width: 90px;
-  background-color: orangered;
+  background-color: rgb(0, 148, 148);
   color: white;
   font-size: 22px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+  
 }
-.datas a{
+.datas button{
   padding: 8px;
   background-color: rgb(1, 49, 49);
   color: white;
@@ -61,7 +63,14 @@ code {
   font-size: 20px;
   margin-top: 11px;
   /* width: 100px; */
+  border: none;
+  cursor: pointer;
 }
 .datas p{
   font-size: 20px;
+}
+
+.app h1 i{
+  font-size: 33px;
+  color: #fff;
 }
