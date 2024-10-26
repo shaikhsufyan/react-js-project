@@ -64,3 +64,12 @@ form button{
   border: none;
   cursor: pointer;
 }
+
+
+
+/* toast css */
+.toastBody{
+  font-size: 22px;
+}
+
+ 
