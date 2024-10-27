@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(2, 107, 107);
 }
 
 code {
@@ -15,8 +16,9 @@ code {
   width: 380px;
   margin: auto;
   padding: 11px;
-  background-color: rgb(1, 112, 112);
-  color: white;
+  /* background-color: rgb(1, 112, 112); */
+  background-color: #fff;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 44px;
   
@@ -29,7 +31,7 @@ code {
 .container input{
   width: 70%;
   padding: 9px;
-  border: none;
+  border: 2px solid black;
   font-size: 22px;
   border-radius: 2px;
 }
@@ -37,7 +39,7 @@ code {
   width: 70px;
   height: 44px;
   border: none;
-  background-color: black;
+  background-color: rgb(0, 88, 88);
   color: white;
   font-size: 20px;
   margin-left: 6px;
@@ -64,6 +66,6 @@ code {
   top: 28px;
   cursor: pointer;
   font-size: 21px;
-  color: black;
-  color: white;
+   color: rgb(0, 78, 78);
+
 }
