@@ -3,7 +3,7 @@
  const Progress = ({progress, color}) => {
 
     const styleObj = {
-        width : `${progress}%`,
+        width : "50%",
         height : "30px",
         backgroundColor:color,
         borderRadius:"26px"
@@ -11,7 +11,7 @@
    return (
      <div className='container'>
         <div style={styleObj}>
-            {`${progress}%`}
+            {/* {`${progress}%`} */}
             
         </div>
      </div>
@@ -19,3 +19,24 @@
  }
  
  export default Progress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// What is Promise in JAVASCRIPT ?
+
+// Fetch(API) => Pending, Resolve, Reject 
+
