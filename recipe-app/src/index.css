@@ -33,6 +33,7 @@ code {
   border: none;
   font-size: 20px;
   border-radius: 6px;
+  cursor: pointer;
 }
 .meals{
   display: flex;
@@ -99,4 +100,10 @@ code {
  }
 .mealInfo .info{
   margin-top: -112px;
+}
+.msg{
+  text-align: center;
+}
+.head{
+  text-align: center;
 }
