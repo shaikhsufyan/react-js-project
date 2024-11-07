@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.user{
+  display: flex;
+  justify-content: center;
+}
 .container{
   
   width: 300px;
@@ -19,7 +23,7 @@ code {
   box-shadow: 0px 4px 4px 4px silver;
   border-radius: 6px;
   text-align: center;
-  padding: 5px;
+  padding: 11px;
  margin-top: 11px;
 
 }
