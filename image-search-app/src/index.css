@@ -11,18 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
- 
+ h1{
+  text-align: center;
+ }
 .inputs {
   display: flex;
+ gap: 3px;
   justify-content: center;
   padding: 33px;
+   
 }
 .inputs input{
-  width: 400px;
-  padding: 11px;
-  font-size: 18px;
-  border: 2px solid black;
+  width: 450px;
+  padding: 15px;
+  font-size: 20px;
   border-radius: 5px;
+  border: none;
+  background-color: #e0dada;
 }
 .inputs button{
   width: 80px;
@@ -31,16 +36,19 @@ code {
   color: white;
   font-size: 20px;
   border-radius: 4px;
+  
 }
 .images{
-  width: 80%;
+  width: 100%;
   margin: auto;
   background-color: rgb(0, 0, 0);
   text-align: center;
-  padding: 11px;
+  margin-top: 22px;
+ 
 }
 .images img{
-  padding: 11px;
-  width: 240px;
-  height: 220px;
+  padding: 31px;
+  width: 300px;
+    height: 300px;
+    /* box-shadow: 1px 3px 3px 3px rgb(255, 255, 255); */
 }
