@@ -22,7 +22,6 @@ nav{
 nav ul li a{
   color: white;
   margin-inline: 11px;
-  font-size: 14px;
 }
 .head{
   font-size: 20px;
@@ -37,7 +36,7 @@ form input{
   padding: 5px;
   border: 1px solid rgb(119, 119, 119);
   font-size: 17px;
-  color: rgb(153, 153, 153);
+  color: rgb(83, 83, 83);
   margin-top: 21px;
 }
 form button{
@@ -57,19 +56,55 @@ form .heading{
 }
 .account{
   text-align: left;
- margin-top: -12px;
+ margin-top: -10px;
 }
 .account p{
   font-size: 14px;
   color: rgb(83, 83, 83);
+  margin-top: 5px;
 }
 .account a{
   color: rgb(0, 0, 255);
+  cursor: pointer;
 }
 
 .main-page{
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 53px;
   margin-top: 29px;
+  flex-wrap: wrap;
 }
+  img{
+    width: 500px;
+  }
+  .errMsg{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(6, 162, 214);
+    width: 300px;
+    margin: auto;
+    color: white;
+     
+    
+  }
+
+  .home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .home button{
+    width: 130px;
+    height: 36px;
+    border: none;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+
+  }
+  .login-form{
+    margin: auto;
+  }
