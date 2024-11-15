@@ -20,3 +20,11 @@
 .container img{
   width: 125px;
 }
+h1{
+  text-align: center;
+  color: rgb(1, 97, 97);
+}
+
+i{
+  font-size: 200px;
+}
