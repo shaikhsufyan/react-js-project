@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  background-color: rgb(2, 104, 104);
+}
+ .container{
+  width: 300px;
+  padding: 16px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+ }
+ .container input{
+  width: 95%;
+  height: 20px;
+  padding: 3px;
+  font-size: 15px;
+
+ }
+ .container p{
+  margin: 3px;
+  text-align: left;
+  margin-top: 12px;
+ }
+ .container button{
+  width: 140px;
+  height: 38px;
+  background-color: rgb(1, 65, 65);
+  color: white;
+  font-size: 19px;
+  border: none;
+  margin-top: 18px;
+ }
+ .result p{
+  text-align: center;
+  font-size: 22px;
+ }
