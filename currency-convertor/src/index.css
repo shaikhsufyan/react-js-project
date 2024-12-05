@@ -16,7 +16,7 @@ code {
   width: 600px;
   padding: 22px;
   border-radius: 11px;
-  box-shadow: 4px 4px 4px 4px silver;
+  /* box-shadow: 4px 4px 4px 4px silver; */
   margin: auto;
   margin-top: 22px;
 }
