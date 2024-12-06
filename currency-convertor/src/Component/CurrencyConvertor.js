@@ -42,7 +42,7 @@ import { PulseLoader } from 'react-spinners';
     }
 
     const convertCurrency = async()=>{
-        setLoader(true)
+        // setLoader(true)
         const res = await fetch(`https://api.frankfurter.dev/v1/latest?amount=${amount}&base=${fromCurrency}&symbols=${toCurrency}`);
         const data = await res.json();
         console.log(data.rates[toCurrency]);
@@ -53,7 +53,7 @@ import { PulseLoader } from 'react-spinners';
     
    return (
      <div className='container'>
-     {/* <p className="heading">Currency Convertor</p> */}
+     <p className="heading">Currency Convertor</p>
         <div className='select'>
             <div>
                 <p>From</p>
