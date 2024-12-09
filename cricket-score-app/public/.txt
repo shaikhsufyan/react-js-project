@@ -1,0 +1,109 @@
+import React, { useEffect, useState } from "react";
+import circle from "../Component/circle.png"
+
+const CricketScore = () => {
+  const [scoreData, setScoreData] = useState([]);
+  const [inputData, setInputData] = useState()
+  const [search, setSearch] = useState("");
+
+  const getScore = async () => {
+    const response = await fetch(
+      "https://api.cricapi.com/v1/cricScore?apikey=0328c2e4-976d-4f98-a46c-16b370991bbc"
+    );
+    const data = await response.json();
+    console.log(data.data);
+    setScoreData(data.data);
+  };
+  useEffect(() => {
+    getScore();
+  }, []);
+
+  const handleInput = (event) => {
+    setInputData(event.target.value);
+    console.log(event.target.value);
+    
+     
+  };
+  const searchData = () =>{
+    setSearch(inputData)
+    getScore();
+    console.log(search);
+    
+  }
+  return (
+    <div className="main-container">
+      <div className="searchBar">
+        <input
+          type="text"
+          placeholder="Search Series, matches .."
+          onChange={handleInput}
+          value={inputData}
+        />
+        <button onClick={searchData}>Search</button>
+      </div>
+      <div className="heading">
+       <img src={circle}/>
+        <p>Live Cricket Score</p> 
+      </div>
+      <div className="container">
+        {scoreData
+          ? scoreData.map((curVal) => {
+            console.log(curVal?.series?.includes(search))
+              if (curVal.status != "Match not started") {
+                
+                if (curVal?.series.includes(search) | curVal?.t1.includes(search) || curVal?.t2.includes(search) ) {
+                  return (
+                    <div className="card">
+                      <h3>{curVal.series}</h3>
+                      <h3>{curVal.matchType}</h3>
+                      <div className="imgs">
+                        <div>
+                          <img src={curVal.t1img} />
+                          <p>{curVal.t1}</p>
+                          <p>{curVal.t1s}</p>
+                        </div>
+                        <div>
+                          <img src={curVal.t2img} />
+                          <p>{curVal.t2}</p>
+                          <p>{curVal.t2s}</p>
+                        </div>
+                      </div>
+                      <p className="status">Status : {curVal.status}</p>
+                    </div>
+                    
+                  );
+                  return;
+                }
+                if(inputData == ""){
+                    return (
+                  <div className="card">
+                    <h3>{curVal.series}</h3> 
+                    <h3>{curVal.matchType}</h3>
+                    <div className="imgs">
+                      <div>
+                        <img src={curVal.t1img} />
+                        <p>{curVal.t1}</p>
+                        <p>{curVal.t1s}</p>
+                      </div>
+                      <div>
+                        <img src={curVal.t2img} />
+                        <p>{curVal.t2}</p>
+                        <p>{curVal.t2s}</p>
+                      </div>
+                    </div>
+                    <p>Status : {curVal.status}</p>
+                  </div>
+                );
+                
+                }
+                 
+                
+              }
+            })
+          : "Data Not Found!"}
+      </div>
+    </div>
+  );
+};
+
+export default CricketScore;

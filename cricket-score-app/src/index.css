@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} 
+.searchBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 22px;
+}
+.searchBar input{
+  width: 250px;
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+  background-color: #e6e4e4;
+  border-radius: 3px;
+}
+.searchBar button{
+  width: 100px;
+  height: 32px;
+  background-color: crimson;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+}
+.heading img{
+  width: 30px;
+  height: 30px;
+}
+.heading p{
+  font-size: 28px;
+  font-weight: 600;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.card{
+  width: 350px;
+  padding: 11px;
+  border-radius: 6px;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  margin-top: 22px;
+}
+.card .img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.status{
+  font-size: 18px;
+  font-weight: 600;
+}
