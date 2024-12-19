@@ -31,10 +31,8 @@
             diff<0 ? setArrowUp(false) : setArrowUp(true);
             setCryptoStatus(diff.toFixed(2))
             window.sessionStorage.setItem("preValue",cryptoValue.toFixed(2))
-            
-
         }catch(err){
-            console.log(err);
+            console.log("ERROR :",err);
             
         }
          
