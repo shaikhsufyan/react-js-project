@@ -32,7 +32,7 @@
             setCryptoStatus(diff.toFixed(2))
             window.sessionStorage.setItem("preValue",cryptoValue.toFixed(2))
         }catch(err){
-            console.log("ERROR :",err);
+            console.log("ERROR : ",err);
             
         }
          
