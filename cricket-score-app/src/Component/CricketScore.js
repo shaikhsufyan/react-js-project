@@ -74,7 +74,7 @@ const CricketScore = () => {
                 );
               }
 
-              if(search == ""){
+              if(search === ""){
                 return (
                   <div className="card">
                     <h3>{curVal.series}</h3>
@@ -98,7 +98,7 @@ const CricketScore = () => {
             }
           })
         ) : (
-          <p>Data Not Found!</p>
+          <p>Data Not Found !</p>
         )}
       </div>
     </div>
